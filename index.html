@@ -1,0 +1,1179 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar pt-3">
+        <div class="container-fluid container-lg top-menu">
+          <div>
+            <a
+              class="logo-link"
+              href="/">
+              <h1 class="fs-1 fw-bold">E-Ticaret</h1>
+            </a>
+          </div>
+          <div>
+            <form class="box p-2 d-flex">
+              <input
+                type="text"
+                class="w-100"
+                placeholder="Aradığınız ürün,kategori veya markayı yazınız" />
+              <button class="border-0 bg-white px-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="px-2 menu-btn categories-icon">
+              <a
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+              <div
+                class="modal fade"
+                id="Modal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1
+                        class="modal-title fs-5"
+                        id="exampleModalLabel">
+                        Kategoriler
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="nav-list">
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Elektronik
+                          </a>
+                        </li>
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Moda
+                          </a>
+                        </li>
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Erkek
+                          </a>
+                        </li>
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Kadın
+                          </a>
+                        </li>
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Süpermarket
+                          </a>
+                        </li>
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Ayakkabı & Çanta
+                          </a>
+                        </li>
+                        <li class="nav-items">
+                          <a
+                            class="categories-link nav-link"
+                            href="#">
+                            Anne & Çocuk
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 menu-btn dropdown">
+              <div>
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Giriş Yap</span>
+                </a>
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item login ps-1 pe-0"
+                    href="#">
+                    Giriş Yap
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item login ps-1 pe-0"
+                    href="#">
+                    Üye Ol
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-2 menu-btn">
+              <a href="#">
+                <i class="fa-solid fa-heart"></i>
+                <span>Favorilerim</span>
+              </a>
+            </div>
+            <div class="px-2 menu-btn">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Sepetim</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <ul class="nav-lists">
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Elektronik
+          </a>
+        </li>
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Moda
+          </a>
+        </li>
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Erkek
+          </a>
+        </li>
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Kadın
+          </a>
+        </li>
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Süpermarket
+          </a>
+        </li>
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Ayakkabı & Çanta
+          </a>
+        </li>
+        <li class="nav-items">
+          <a
+            class="categories-link nav-link"
+            href="#">
+            Anne & Çocuk
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- !Content Main -->
+    <main>
+      <!-- ! Slider -->
+      <section>
+        <div class="container-lg container-fluid slider">
+          <div
+            id="slider"
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="row g-0">
+                    <div class="col-12 text-center">
+                      <a href="#">
+                        <img
+                          src="/images/kampanya.webp"
+                          class="img-fluid rounded-0"
+                          alt="..." />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide card">
+                  <div class="row g-0">
+                    <div class="col-12 text-center">
+                      <a href="#">
+                        <img
+                          src="/images/indirim.jpg"
+                          class="img-fluid rounded-0"
+                          alt="..." />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide card">
+                  <div class="row g-0">
+                    <div class="col-12 text-center">
+                      <a href="#">
+                        <img
+                          src="/images/kampanya.webp"
+                          class="img-fluid rounded-0"
+                          alt="..." />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="main-prev-button"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="main-next-button"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ! Best Seller  -->
+      <section>
+        <div class="container-fluid best-seller p-0">
+          <h1 class="text-center p-4 color-text">Çok Satanlar</h1>
+          <div class="container-lg container-fluid best-seller">
+            <div
+              class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ! Suggestion -->
+      <section>
+        <div class="container-fluid best-seller p-0">
+          <h1 class="text-center p-4 color-text">Önerilenler</h1>
+          <div class="container-lg container-fluid">
+            <div
+              class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-main-color">
+                  <img
+                    src="images/laptop2.jpeg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body text-white">
+                    <h5 class="card-title fs-5 ms-2">Laptop</h5>
+                    <div class="text-warning ms-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-white"></i>
+                      <span class="ms-2">4.0</span>
+                    </div>
+                    <del class="fs-6 ms-2">15.000 TL</del>
+                    <p class="card-text fs-5 ms-2">14.000₺</p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button class="btn btn-light text-center mb-1">
+                      Sepete Ekle
+                    </button>
+                    <button class="btn btn-dark text-center">İncele</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ! Footer -->
+    <footer>
+      <div class="container-fluid best-seller p-0">
+        <h1 class="text-center p-2 color-text">E-ticaret</h1>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-6 col-md-3">
+              <p class="fw-bold">E-ticaret</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Kullanıcı Bilgilerim
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Hakkımızda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Vizyon & Misyon
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Kişisel Verilerin Korunması
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Satıcı Ol
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    İş Ortaklarımız
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Müşteri Hizmetleri
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Bizden Haberler
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    İletişim
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="fw-bold">Popüler Kategoriler</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Laptop
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Telefon
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Bilgisayar
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Tablet
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Kitap
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Müzik
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Kozmetik
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Kişisel Bakım
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Led Tv
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Robot Süpürge
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="fw-bold">Özel Sayfalar</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Premium
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Sevgililer Günü
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Yılbaşı Hediyeleri
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Anneler Günü
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Babalar Günü
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Popüler Aramalar
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    Tüm Kategoriler
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="fw-bold">Bizi Takip Edin</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    <i class="fa-brands fa-facebook fs-1 me-2 main-color"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    <i class="fa-brands fa-twitter fs-1 me-2 main-color"></i>
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    <i
+                      class="fa-brands fa-linkedin-in fs-1 me-2 main-color"></i>
+                    Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    <i class="fa-brands fa-pinterest fs-1 me-2 main-color"></i>
+                    Pinterest
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn mt-3 p-0">
+                    <i
+                      class="fa-brands fa-square-instagram fs-1 me-2 main-color"></i>
+                    İnstagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView: 7,
+            spaceBetween: 10,
+          },
+          1400: {
+            slidesPerView: 9,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

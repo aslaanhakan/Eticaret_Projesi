@@ -1,0 +1,145 @@
+/** @format */
+
+:root {
+  --main-color: #f04904;
+  --white: #f9f9fb;
+  --text-color: #f9f9fb;
+  --gray: #bababc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+input {
+  outline: none;
+  border: none;
+}
+
+.color-text {
+  color: var(--text-color) !important;
+}
+.main-color {
+  color: var(--main-color) !important;
+}
+.bg-main-color {
+  background-color: var(--main-color) !important;
+}
+
+div a {
+  text-decoration: none;
+  color: black;
+}
+
+.box {
+  width: 400px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+}
+.menu-btn a {
+  transition: 0.3s;
+}
+.menu-btn a:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.categories-icon {
+  display: none;
+}
+.login:active {
+  background-color: var(--white) !important;
+}
+.nav-lists {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-items {
+  padding: 10px 10px;
+}
+.nav-items:hover {
+  border-bottom: var(--main-color) solid 1px;
+}
+.nav-link {
+  transition: 0.4s !important;
+}
+
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+.slider {
+  margin-top: 50px;
+}
+.slide-content {
+  display: flex;
+  align-items: center;
+}
+
+#slider {
+  position: relative;
+}
+.main-prev-button {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  height: 100%;
+}
+.main-next-button {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.best-seller {
+  margin-top: 50px;
+}
+.best-seller h1 {
+  background-color: var(--main-color);
+  margin-bottom: 30px;
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 998px) {
+  .top-menu {
+    position: relative;
+  }
+  .menu-btn a span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    font-size: 13px;
+  }
+  .box {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+    width: 95%;
+  }
+  .categories-icon {
+    display: inline-block;
+  }
+  .nav-lists {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  * {
+    font-size: 12px;
+  }
+}
